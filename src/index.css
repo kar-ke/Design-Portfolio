@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono&family=Playfair+Display:ital,wght@0,700;1,700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono&family=Playfair+Display:ital,wght@0,700;1,700&family=Instrument+Serif:ital@0;1&family=Geist:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-geist: "Geist", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-serif: "Instrument Serif", "Playfair Display", serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -28,4 +29,11 @@ body {
   color: var(--text-color);
   margin: 0;
   overflow-x: hidden;
+}
+
+html[data-custom-cursor="true"], html[data-custom-cursor="true"] * {
+  cursor: none !important;
+}
+html[data-hide-cursor="true"], html[data-hide-cursor="true"] * {
+  cursor: none !important;
 }
